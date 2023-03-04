@@ -1,6 +1,7 @@
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from joblib import dump
 
 
 def main():
@@ -15,11 +16,14 @@ def main():
     clf.fit(x_train, y_train)
 
     predicted_labels = clf.predict(x_test)
-    print(predited_labels)
+    print(predicted_labels)
     print(y_test)
 
     performance = clf.score(x_test, y_test)
     print(performance)
+
+    # Export the model
+    dump(clf, 'model.joblib')
 
 
 if __name__ == "__main__":
