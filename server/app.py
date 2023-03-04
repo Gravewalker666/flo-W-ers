@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
 from joblib import load
+from flask_cors import CORS
 
 model = load('model/model.joblib')
 app = Flask(__name__)
+CORS(app)
 target_names = ['setosa', 'versicolor', 'virginica']
 
 

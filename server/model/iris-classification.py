@@ -20,8 +20,6 @@ def main():
     print(y_test)
 
     performance = clf.score(x_test, y_test)
-    print(x_test)
-    print(y_test)
     print(performance)
 
     # Export the model
