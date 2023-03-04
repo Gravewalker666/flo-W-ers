@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def index():
+    return "hello world"
 
 
 @app.route('/predict/<float:sepal_length>/<float:sepal_width>/<float:petal_length>/<float:petal_width>')
