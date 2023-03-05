@@ -17,7 +17,7 @@ pipenv install
 
 3. Run the server 
 ```
-pipenv run
+pipenv run start
 ```
 
 4. Open the `client/index.html` to test the predictions on the web view 
