@@ -13,5 +13,5 @@ form.addEventListener('submit', async (event) => {
     body: JSON.stringify(Object.fromEntries(formData))
   });
   const { flower_type } = await response.json();
-  flowerContainer.innerText = flower_type;
+  flowerContainer.innerText = flower_type.charAt(0).toUpperCase() + flower_type.slice(1);
 });
