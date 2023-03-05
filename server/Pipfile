@@ -9,6 +9,7 @@ joblib = "*"
 scikit-learn = "*"
 pytest = "*"
 flask-cors = "*"
+gunicorn = "*"
 
 [dev-packages]
 
