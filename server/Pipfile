@@ -15,7 +15,6 @@ gunicorn = "*"
 
 [requires]
 python_version = "3.9"
-python_full_version = "3.9.10"
 
 [scripts]
 start = "python3.9 app.py"
