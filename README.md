@@ -10,6 +10,11 @@ https://user-images.githubusercontent.com/45477334/222952663-4f0d58be-c620-47a1-
 git clone https://github.com/Gravewalker666/flo-W-ers.git
 ```
 
+3. Cd into the server
+```
+cd server/
+```
+
 2. Install dependancies 
 ```
 pipenv install
